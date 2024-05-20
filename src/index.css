@@ -10,11 +10,11 @@
 
   /* Product.css */
   .product-card {
-    @apply border rounded-lg p-4 m-4 bg-white shadow;
+    @apply border rounded-lg w-[316px] p-4 m-4 bg-white shadow;
   }
 
   .product-image {
-    @apply w-full h-auto rounded;
+    @apply w-[300px] h-[300px];
   }
 
   .product-info {

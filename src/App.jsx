@@ -3,11 +3,12 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import { ProductContext } from "./context/ProductContext";
+import ProductProvider from "./context/ProductContext";
+
 const App = () => {
   return (
     <div>
-      <ProductContext.Provider>
+      <ProductProvider>
         <Router>
           <Navbar />
           <Routes>
@@ -16,7 +17,7 @@ const App = () => {
           </Routes>
           <Footer />
         </Router>
-      </ProductContext.Provider>
+      </ProductProvider>
     </div>
   );
 };
