@@ -1,0 +1,24 @@
+/* Product.css */
+.product-card {
+  @apply border rounded-lg p-4 m-4 bg-white shadow;
+}
+
+.product-image {
+  @apply w-full h-auto rounded;
+}
+
+.product-info {
+  @apply mt-4;
+}
+
+.product-title {
+  @apply text-lg font-bold mb-2;
+}
+
+.product-price {
+  @apply text-red-600 text-xl mb-2;
+}
+
+.product-description {
+  @apply text-gray-600 text-sm;
+}

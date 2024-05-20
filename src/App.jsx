@@ -3,17 +3,20 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import { ProductContext } from "./context/ProductContext";
 const App = () => {
   return (
     <div>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-        <Footer />
-      </Router>
+      <ProductContext.Provider>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </ProductContext.Provider>
     </div>
   );
 };

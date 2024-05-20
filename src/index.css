@@ -1,3 +1,84 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  /* Navbar */
+  .mainnav {
+    @apply px-10;
+  }
+
+  /* Product.css */
+  .product-card {
+    @apply border rounded-lg p-4 m-4 bg-white shadow;
+  }
+
+  .product-image {
+    @apply w-full h-auto rounded;
+  }
+
+  .product-info {
+    @apply mt-4;
+  }
+
+  .product-title {
+    @apply text-lg font-bold mb-2;
+  }
+
+  .product-price {
+    @apply text-red-600 text-xl mb-2;
+  }
+
+  .product-description {
+    @apply text-gray-600 text-sm;
+  }
+
+  /* Home.css */
+  .homepage {
+    @apply p-5 bg-gray-100;
+  }
+
+  .category_buttons {
+    @apply flex justify-between items-center mb-5;
+  }
+
+  .cat_btns button {
+    @apply mr-2 px-4 py-2 text-sm border rounded capitalize transition border-black;
+  }
+
+  .cat_btns button.active {
+    @apply bg-blue-600 text-white;
+  }
+
+  .search-container input[type="text"] {
+    @apply px-4 py-2 text-sm border rounded w-52;
+  }
+
+  .product_list {
+    @apply flex flex-wrap gap-5 justify-center;
+  }
+
+  .not-available-text {
+    @apply text-center text-lg text-gray-500;
+  }
+
+  .pagination {
+    @apply flex justify-center mt-5;
+  }
+
+  .pagination button {
+    @apply mx-1 px-4 py-2 text-sm border rounded transition;
+  }
+
+  .pagination button.active {
+    @apply bg-blue-600 text-white;
+  }
+
+  .pagination button:disabled {
+    @apply bg-gray-200 cursor-not-allowed;
+  }
+
+  .pagination button:hover:not(:disabled) {
+    @apply bg-gray-300;
+  }
+}
