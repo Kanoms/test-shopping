@@ -21,9 +21,9 @@ const Navbar = () => {
           <li>
             Test <span className="text-red-600 text-4xl">.</span>
           </li>
-          <li>
+          <button>
             <CiShoppingCart />
-          </li>
+          </button>
         </ul>
       </div>
       <div className="mainnav text-xl py-4  border border-black">
