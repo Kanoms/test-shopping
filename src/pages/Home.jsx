@@ -91,7 +91,6 @@ const Home = () => {
 
   return (
     <main className="homepage">
-      home
       <div>
         <div className="category_buttons">
           <div className="cat_btns">
